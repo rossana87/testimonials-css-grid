@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,12 +17,18 @@
   </style>
 </head>
 <body>
+  <div class="container">
+
   <!-- Card Purple - Daniel Clifford -->
   <div class="card card--purple">
-  <div class="card--header">
-    <img src="./images/image-daniel.jpg" alt="daniel_portrait" />
-    <p class="card--name">Daniel Clifford </p> 
-    <p class="card--name-sub">Verified Graduate</p>
+    <div class="card--header">
+      <div class="header-wrapper">
+      <img src="./images/image-daniel.jpg" alt="daniel_portrait" class="card--image" />
+      <div class="name--wrapper">
+      <p class="card--name">Daniel Clifford </p> 
+      <p class="card--name-sub">Verified Graduate</p>
+      </div>
+    </div>
   </div>
   
   <div class="card--content">
@@ -37,10 +46,14 @@
   <!-- Card Grey - Jonathan Walters -->
   <div class="card card--grey">
     <div class="card--header">
-    <img src="./images/image-jonathan.jpg" alt="jonathan_portrait" />
+    <div class="header-wrapper">
+    <img src="./images/image-jonathan.jpg" alt="jonathan_portrait" class="card--image" />
+    <div class="name--wrapper">
     <p class="card--name">Jonathan Walters</p> 
     <p class="card--name-sub">Verified Graduate</p>
-  </div>
+    </div>
+    </div>
+    </div>
 
   <div class="card--content">
   <p class="card--content-one">The team was very supportive and kept me motivated</p>
@@ -52,50 +65,78 @@
 
 
   <!-- Card White - Jeanette Harmon -->
-  <div class="card card--white">
+  <div class="card card--white-one">
     <div class="card--header">
-    <img src="./images/image-jeanette.jpg" alt="jeanette_portrait" />
+      <div class="header-wrapper">
+    <img src="./images/image-jeanette.jpg" alt="jeanette_portrait" class="card--image"/>
+    <div class="name--wrapper">
     <p class="card--name">Jeanette Harmon</p> 
     <p class="card--name-sub">Verified Graduate</p>
   </div>
-  <div>
-    <p>An overall wonderful and rewarding experience</p>
-    <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+  </div>
+  </div>
+  <div class="card--content">
+    <p class="card--content-one">An overall wonderful and rewarding experience</p>
+    <p class="card--content-two">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
   while doing something I love. ”</p>
   </div>
 </div>
 
 
   <!-- Patrick Abrams -->
-  Patrick Abrams
-  Verified Graduate
+  <div class="card card--black">
+    <div class="card--header">
+      <div class="header-wrapper">
+    <img src="./images/image-patrick.jpg" alt="patrick_portrait" class="card--image"/>
+    <div class="name--wrapper">
+    <p class="card--name">Patrick Abrams</p> 
+    <p class="card--name-sub">Verified Graduate</p>
+  </div>
+  </div>
+  </div>
 
-  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-  learning from their experiences was easy.
-
-  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+  <div class="card--content">
+    <p class="card--content-one">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+  learning from their experiences was easy.</p>
+    <p class="card--content-two">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
   gave me the confidence necessary to be able to go out in the world and present myself as a capable 
   junior developer. The standard is above the rest. You will get the personal attention you need from 
-  an incredible community of smart and amazing people. ”
+  an incredible community of smart and amazing people. ”</p>
+  </div>
+    </div>
+
 
   <!-- Kira Whittle -->
-  Kira Whittle
-  Verified Graduate
-
-  Such a life-changing experience. Highly recommended!
-
-  “Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+  <div class="card card--white-two">
+    <div class="card--header">
+      <div class="header-wrapper">
+    <img src="./images/image-kira.jpg" alt="kira_portrait" class="card--image" />
+    <div class="name--wrapper">
+    <p class="card--name">Kira Whittle</p> 
+    <p class="card--name-sub">Verified Graduate</p>
+  </div>
+  </div>
+  </div>
+  
+  <div class="card--content">
+    <p class="card--content-one">Such a life-changing experience. Highly recommended!</p>
+    <p class="card--content-two">“Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
   professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
   student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
   did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
   project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
   could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
   experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-  100% recommend! ”
+  100% recommend! ”</p>
+  </div>
+</div>
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/rossana87">Rossana Ventrella</a>.
   </div>
+
+  
 </body>
 </html>
